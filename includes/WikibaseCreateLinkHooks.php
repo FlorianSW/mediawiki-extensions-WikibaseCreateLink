@@ -40,6 +40,7 @@ class Hooks {
 			$toolbox['wikibasecreatelink'] = array(
 				'text' => $baseTemplate->getMsg( 'wikibasecreatelink-createlabel' )->text(),
 				'href' => $createItemPage,
+				'target' => 'blank',
 				'id' => 't-wikibasecreatelink'
 			);
 		}
