@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Florian Schmidt"
+		]
+	},
+	"wikibasecreatelink-desc": "Adds a link to the toolbox to create new Wikibase items, if the current article does not have one already.",
+	"wikibasecreatelink-createlabel": "Create new {{WBREPONAME}} item"
+}

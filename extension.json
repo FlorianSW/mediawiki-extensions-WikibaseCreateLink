@@ -1,0 +1,28 @@
+{
+	"name": "WikibaseCreateLink",
+	"version": "0.1.0",
+	"author": [
+		"Florian Schmidt"
+	],
+	"descriptionmsg": "wikibasecreatelink-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"callback": "WikibaseCreateLink\\Hooks::setup",
+	"requires": {
+		"MediaWiki": ">= 1.28.0"
+	},
+	"AutoloadClasses": {
+		"WikibaseCreateLink\\Hooks": "includes/WikibaseCreateLinkHooks.php"
+	},
+	"Hooks": {
+		"BaseTemplateToolbox": [
+			"WikibaseCreateLink\\Hooks::onBaseTemplateToolbox"
+		]
+	},
+	"MessagesDirs": {
+		"WikibaseCreateLink": [
+			"i18n"
+		]
+	},
+	"manifest_version": 1
+}

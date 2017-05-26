@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Florian Schmidt"
+		]
+	},
+	"wikibasecreatelink-desc": "{{desc|name=WikibaseCreateLink}}",
+	"wikibasecreatelink-createlabel": "Link label in the toolbox for the Create Wikibase item link."
+}
