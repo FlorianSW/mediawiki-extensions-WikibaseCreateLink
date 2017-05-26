@@ -8,7 +8,7 @@ use Exception;
 
 class Hooks {
 	public static function setup() {
-		if ( !class_exists( 'WikibaseClient' ) ) {
+		if ( !class_exists( 'Wikibase\Client\WikibaseClient' ) ) {
 			throw new Exception( 'The Wikibase Client extension needs to be ' .
 				'installed to work with this extension.' );
 		}
