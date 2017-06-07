@@ -21,9 +21,13 @@ class Hooks {
 	 * @param array $toolbox
 	 */
 	public static function onBaseTemplateToolbox( BaseTemplate $baseTemplate, array &$toolbox ) {
-		$wikibaseClient = WikibaseClient::getDefaultInstance();
 		$skin = $baseTemplate->getSkin();
 		$title = $skin->getTitle();
+		// if the page of the Title does not contain content, do not add a link to create a Wikibase item
+		if ( !$title->isContentPage() ) {
+			return;
+		}
+		$wikibaseClient = WikibaseClient::getDefaultInstance();
 		$idString = $skin->getOutput()->getProperty( 'wikibase_item' );
 		if ( !$idString ) {
 			$repoLinker = $wikibaseClient->newRepoLinker();
