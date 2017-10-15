@@ -39,6 +39,8 @@ class Hooks {
 				[
 					'lang' => $skin->getLanguage()->getCode(),
 					'label' => $title->getPrefixedText(),
+					'site' => $wikibaseClient->getSettings()->getSetting( 'siteGlobalID' ),
+					'page' => $title->getPrefixedText(),
 				]
 			);
 			$toolbox['wikibasecreatelink'] = array(
